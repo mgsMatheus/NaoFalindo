@@ -23,7 +23,7 @@ Uma API para o sistema de controle de gastos pessoais.
 *Exemplo de requisição*
 
 | campo | tipo | obrigatório | descricao 
-|-------|------|-------------|-----------
+|-------|------|:-------------:|-----------
 |valor|decimal|sim o valor da despesa|data|data|sim a data da despesa|
 contaId|inteiro|sim| o id de uma conta previamente cadastrada 
 categoriaId|inteiro|sim| o id de uma conta previamente cadastrada
@@ -38,11 +38,12 @@ descricao|texto|nao|
   descricao: 'cinema com os amigos'
 }
 
+``` 
+
 ### Detalhes Despesa
 
 `GET` naofalindo/api/despesa/{id} 
 
-``` 
 *Resposta*
 | codigo | descricao
 |------- | ---------
@@ -50,7 +51,6 @@ descricao|texto|nao|
 | 400 | campos invalidos
 
 *Exemplos de resposta*
-```json
 ```json
 { 
   valor: 100.59,
